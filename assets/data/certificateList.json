@@ -1,0 +1,95 @@
+[
+  {
+    "gcitCertId": "12345t678",
+    "title": "Bachelor of Engineering in Information Technology",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4",
+    "issuedOn": "20023-12-6 23:45"
+  },
+  {
+    "gcitCertId": "fs353te83y83483h8r83h8h384h853535t5t3535353843h8ht83ht84y83y483y84y85y",
+    "title": "Bachelor in Computer Science",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4",
+    "issuedOn": "20023-12-6 23:45"
+  },
+  {
+    "gcitCertId": "12345t678rt",
+    "title": "Certificate 3",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4",
+    "issuedOn": "20023-12-6 23:45"
+  },
+  {
+    "gcitCertId": "12345t67f8",
+    "title": "Certificate 1",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  },
+  {
+    "gcitCertId": "12d345t678r",
+    "title": "Certificate 2",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  },
+  {
+    "gcitCertId": "12d345t678rt",
+    "title": "Certificate 3",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  },
+  {
+    "gcitCertId": "1234f5t678",
+    "title": "Certificate 1",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  },
+  {
+    "gcitCertId": "12345td678r",
+    "title": "Certificate 2 Certificate 2 Certificate 2Certificate 2",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  },
+  {
+    "gcitCertId": "1234d5t678rt",
+    "title": "Certificate 3",
+    "date": "2023-5-12",
+    "issuer": "4637t7gt783gt7g3t7g37tg",
+    "cgpa": "3.5",
+    "start": "2023-3-11",
+    "end": "2023-22-23",
+    "duration": "4"
+  }
+]
