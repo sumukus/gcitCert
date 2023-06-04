@@ -19,6 +19,7 @@
     "@web3modal/react-native": "^1.0.0-alpha.5",
     "ethers": "5.4",
     "expo": "~48.0.18",
+    "expo-crypto": "^12.2.2",
     "expo-status-bar": "~1.4.4",
     "fast-text-encoding": "^1.0.6",
     "react": "18.2.0",

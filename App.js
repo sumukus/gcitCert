@@ -1,3 +1,4 @@
+import "./expo-crypto-shim";
 import { StyleSheet, SafeAreaView, StatusBar as SB } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import MainNavigator from "./navigators/MainNavigator";

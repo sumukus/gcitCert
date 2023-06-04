@@ -18,7 +18,6 @@ function Home({ navigation }) {
       "https://www.gcit.edu.bt/wp-content/uploads/sites/4/2023/03/GCIT_Logo.png",
     ],
   };
-  function hadleWalletConnect() {}
 
   return (
     <View style={styles.rootContainer}>
@@ -26,9 +25,10 @@ function Home({ navigation }) {
         <VerifyCert />
       </View>
       <View style={styles.loginContainer}>
-        <Pressable onPress={open}>
+        {/* <Pressable onPress={open}>
           <Text>{isConnected ? "View Account" : "Connect"}</Text>
-        </Pressable>
+        </Pressable> */}
+        <Web3Button />
         <Web3Modal projectId={projectId} providerMetadata={providerMetadata} />
       </View>
     </View>
