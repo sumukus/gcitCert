@@ -1,0 +1,53 @@
+[
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_user", "type": "address" },
+      { "internalType": "string", "name": "_gcitCertId", "type": "string" },
+      { "internalType": "string", "name": "_title", "type": "string" },
+      { "internalType": "string", "name": "_date", "type": "string" },
+      { "internalType": "address", "name": "_issuer", "type": "address" },
+      { "internalType": "uint256", "name": "_cgpa", "type": "uint256" },
+      { "internalType": "string", "name": "_start", "type": "string" },
+      { "internalType": "string", "name": "_end", "type": "string" },
+      { "internalType": "uint256", "name": "_duration", "type": "uint256" }
+    ],
+    "name": "addgcitCert",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_user", "type": "address" }
+    ],
+    "name": "getListOfgcitCert",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "string", "name": "gcitCertId", "type": "string" },
+          { "internalType": "string", "name": "title", "type": "string" },
+          { "internalType": "string", "name": "date", "type": "string" },
+          { "internalType": "address", "name": "issuer", "type": "address" },
+          { "internalType": "uint256", "name": "cgpa", "type": "uint256" },
+          { "internalType": "string", "name": "start", "type": "string" },
+          { "internalType": "string", "name": "end", "type": "string" },
+          { "internalType": "uint256", "name": "duration", "type": "uint256" }
+        ],
+        "internalType": "struct gcitCert.Certificate[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "_gcitCertId", "type": "string" }
+    ],
+    "name": "verifygcitCert",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
