@@ -25,10 +25,15 @@ You have to edit the gcitCert.sol file.
 
 
 ## Create .env file 
-Create the .env file in the root directory and add the following lines 
+Create the .env file in the root directory and add the details for the given fields 
 ```
 SMART_CONTRACT_ADDRESS=Your smart contract address 
 INFURA_API=infura api for your app
 CERTIFICATE_ISSUER=address of certificate issuer
+```
+## Run the dApp
+Now you can run the dApp using the command given below
+```
+npx expo start
 ```
   
