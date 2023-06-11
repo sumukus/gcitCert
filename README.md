@@ -19,9 +19,13 @@ cd gcitCert
 npm i
 
 ```
-### Edit the files inside smartcontract directory
+### Edit the file inside smartcontract directory
 You have to edit the gcitCert.sol file.
 + Inside the gcitCert.sol file replace the address in addgcitCert method with one of your MetaMask wallet account address from testnet(Sepolia)
+
+```
+require(msg.sender == address(0x9dC22219076ef89d9E0a6248F18B3582Ea7A93dB), "Only the authorized issuer can add certificates");
+```
 
 
 ## Create .env file 
