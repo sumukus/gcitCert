@@ -40,6 +40,8 @@ Now you can run the dApp using the command given below
 ```
 npx expo start
 ```
-
-![Login Screen](https://github.com/sumukus/gcitCert/blob/main/login.png)
+<img src="https://github.com/sumukus/gcitCert/blob/main/login.png" 
+        alt="Radio Buttons Image"  
+        height="100%"
+        width="200"/>
   
