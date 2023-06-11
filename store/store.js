@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import smartContractReducer from "./smartContractSlice";
+import metaMaskWalletReducer from "./metaMaskWalletSlice";
 
 export const store = configureStore({
   reducer: {
-    smartContract: smartContractReducer,
+    metaMaskWallet: metaMaskWalletReducer,
   },
 });

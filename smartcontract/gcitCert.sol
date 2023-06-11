@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at Etherscan.io on 2023-06-05
+*/
+
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity ^0.8.9;
@@ -28,7 +32,7 @@ contract gcitCert {
         string memory _end, 
         uint _duration
     ) public {
-        require(msg.sender == address(0x3136D6e327018d4124C222E15f4aD7fA8621f16E), "Only the authorized issuer can add certificates");
+        require(msg.sender == address(0x9dC22219076ef89d9E0a6248F18B3582Ea7A93dB), "Only the authorized issuer can add certificates");
         
         Certificate memory newCertificate = Certificate({
             gcitCertId: _gcitCertId,

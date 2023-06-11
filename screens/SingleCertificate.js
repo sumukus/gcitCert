@@ -8,13 +8,13 @@ function SingleCertificate({ route }) {
       <Text style={styles.title}>{certificate.title}</Text>
 
       <Text style={styles.label}>gcitCertId: </Text>
-      <Text>{certificate.gcitCertId}</Text>
+      <Text selectable={true}>{certificate.gcitCertId}</Text>
       <View style={styles.cgpaContainer}>
         <Text>
           Start: {certificate.start} End: {certificate.end} Duration:{" "}
           {certificate.duration} years
         </Text>
-        <Text style={styles.cgpa}>CGPA: {certificate.cgpa}</Text>
+        <Text>CGPA: {certificate.cgpa}</Text>
       </View>
 
       <Text style={styles.label}>Issued By:</Text>
@@ -48,9 +48,5 @@ const styles = StyleSheet.create({
   cgpaContainer: {
     paddingTop: 10,
     alignItems: "center",
-  },
-  cgpa: {
-    fontSize: 16,
-    fontWeight: "bold",
   },
 });

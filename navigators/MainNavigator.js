@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../screens/Home";
 import Colors from "../constants/Colors";
 import LoginNavigator from "./LoginNavigator";
 import SingleCertificate from "../screens/SingleCertificate";
+import Login from "../screens/Login";
 
 const Stack = createNativeStackNavigator();
 
@@ -15,8 +15,8 @@ function MainNavigator() {
         headerStyle: { backgroundColor: Colors.secondary },
       }}
     >
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Login" children={LoginNavigator} />
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="LoginNavigator" children={LoginNavigator} />
       <Stack.Screen
         name="SingleCertificate"
         component={SingleCertificate}

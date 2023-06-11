@@ -3,10 +3,19 @@ import Certificates from "../screens/Certificates";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import Profile from "../screens/Profile";
+import VerifyCert from "../screens/VerifyCert";
+import { useSelector } from "react-redux";
+import { CERTIFICATE_ISSUER } from "@env";
+import { ethers } from "ethers";
+import AddCertificate from "../screens/AddCertificate";
 
 const Tab = createBottomTabNavigator();
 
 function LoginNavigator() {
+  const accountAddress = useSelector(
+    (state) => state.metaMaskWallet.accountAddress
+  );
+
   return (
     <Tab.Navigator
       screenOptions={{
@@ -16,16 +25,47 @@ function LoginNavigator() {
         contentStyle: { backgroundColor: Colors.background },
       }}
     >
+      {accountAddress !== ethers.utils.getAddress(CERTIFICATE_ISSUER) ? (
+        <Tab.Screen
+          name="Certificates"
+          component={Certificates}
+          options={{
+            title: "List of Your Certificates",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="certificate-outline"
+                size={size}
+                color={color}
+              />
+            ),
+          }}
+        />
+      ) : (
+        <Tab.Screen
+          name="AddCertificate"
+          component={AddCertificate}
+          options={{
+            title: "Add Certificate",
+            tabBarIcon: ({ color, size }) => (
+              <MaterialCommunityIcons
+                name="certificate-outline"
+                size={size}
+                color={color}
+              />
+            ),
+          }}
+        />
+      )}
       <Tab.Screen
-        name="Certificates"
-        component={Certificates}
+        name="Verify"
+        component={VerifyCert}
         options={{
-          title: "List of Your Certificates",
-          tabBarIcon: ({ color, size }) => (
+          title: "Verify Certificate",
+          tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons
-              name="certificate-outline"
-              size={size}
+              name="checkbox-marked-circle-outline"
               color={color}
+              size={size}
             />
           ),
         }}

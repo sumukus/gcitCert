@@ -6,5 +6,6 @@ export default Colors = {
   //background: "#F8F4E5",
   background: "#D2EFFF",
   backgroundWhite: "white",
+  backgroundGrey: "#ffffff",
   text: "#333333",
 };

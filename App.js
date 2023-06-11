@@ -1,16 +1,22 @@
-import { StyleSheet, SafeAreaView, StatusBar as SB } from "react-native";
+import "react-native-get-random-values";
+import "@ethersproject/shims";
+import { StyleSheet, SafeAreaView } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import MainNavigator from "./navigators/MainNavigator";
 import Colors from "./constants/Colors";
-import { useEffect } from "react";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <SB backgroundColor={Colors.secondary} barStyle="default" />
-      <NavigationContainer>
-        <MainNavigator />
-      </NavigationContainer>
+      <StatusBar style="light" backgroundColor={Colors.secondary} />
+      <Provider store={store}>
+        <NavigationContainer>
+          <MainNavigator />
+        </NavigationContainer>
+      </Provider>
     </SafeAreaView>
   );
 }
@@ -18,6 +24,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.background,
+    backgroundColor: Colors.secondary,
   },
 });
