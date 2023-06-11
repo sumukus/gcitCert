@@ -26,7 +26,9 @@ You have to edit the gcitCert.sol file.
 
 ## Create .env file 
 Create the .env file in the root directory and add the following lines 
+```
 SMART_CONTRACT_ADDRESS=Your smart contract address 
 INFURA_API=infura api for your app
 CERTIFICATE_ISSUER=address of certificate issuer
+```
   
