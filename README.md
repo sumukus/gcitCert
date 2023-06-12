@@ -27,6 +27,8 @@ You have to edit the gcitCert.sol file.
 require(msg.sender == address(0x9dC22219076ef89d9E0a6248F18B3582Ea7A93dB), "Only the authorized issuer can add certificates");
 ```
 
+Then deploy the smart contract in the Sepolia testnet and take note of the contract address. We will require it later on to interact 
+with the smart contract. 
 
 ## Create .env file 
 Create the .env file in the root directory and add the details for the given fields 
